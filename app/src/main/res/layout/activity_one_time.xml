@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".setPriceActivity">
+
+
+    <EditText
+        android:id="@+id/setLitre"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border_on_box"
+        android:textColor="#0B0B0B"
+        android:textColorHint="@android:color/darker_gray"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/s_enter_litre_for_add"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/ADDLITRE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/ADDLITRE"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="119dp"
+        android:background="#ef4041"
+        android:gravity="center"
+        android:text="@string/s_add_litre"
+
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ADDPRICE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setLitre" />
+
+    <EditText
+        android:id="@+id/deleteLitre"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_on_box"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/s_enter_litre_for_delete"
+        android:inputType="textPersonName"
+        android:textColor="#0B0B0B"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ADDLITRE" />
+
+    <EditText
+        android:id="@+id/deletePrice"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border_on_box"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/s_enter_price_for_delete"
+        android:inputType="textPersonName"
+        android:textColor="#0B0B0B"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deleteLitre"
+        app:layout_constraintTop_toBottomOf="@+id/ADDPRICE" />
+
+    <EditText
+        android:id="@+id/setPrice"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border_on_box"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/s_enter_price_for_add"
+        android:inputType="textPersonName"
+        android:textColor="#0B0B0B"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/setLitre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ADDPRICE"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ef4041"
+        android:gravity="center"
+        android:text="@string/s_add_price"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/deletePrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setPrice" />
+
+    <TextView
+        android:id="@+id/DELETELITRE"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="@string/s_delete_litre"
+        android:background="#ef4041"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/DELETEPRICE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteLitre" />
+
+    <TextView
+        android:id="@+id/DELETEPRICE"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="44dp"
+        android:background="#ef4041"
+        android:ems="10"
+        android:gravity="center"
+        android:text="@string/s_delete_price"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/viewSetLitre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletePrice" />
+
+    <TextView
+        android:id="@+id/viewSetLitre"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="center|center_vertical"
+        android:hint="@string/s_your_set_litre"
+        android:textColor="#0B0B0B"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DELETELITRE" />
+
+    <TextView
+        android:id="@+id/viewSetPrice"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="center|center_vertical"
+        android:hint="@string/s_your_set_price"
+        android:textColor="#0B0B0B"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSetLitre" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="35dp"
+        android:background="#ef4041"
+        android:gravity="center"
+        android:text="@string/skip_for_now"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSetPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

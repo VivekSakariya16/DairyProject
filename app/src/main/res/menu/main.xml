@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_en"
+        android:orderInCategory="101"
+        android:title="@string/English"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_guj"
+        android:orderInCategory="102"
+        android:title="@string/Gujarati"
+        app:showAsAction="never"/>
+</menu>
